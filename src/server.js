@@ -33,7 +33,7 @@ app.use(cookieParser());
 
 app.use('/auth', authRouter);
 app.use('/api', authenticateToken, routes)
-app.get('/', (req, res) => { res.send('I am healthy!! ❤️'); }) //http://localhost:8000/
+app.get('/', (req, res) => { res.send('I am healthy!! ❤️'); }) //http://localhost:8000/ //HEALTH CHECK
 
 if(PORT) {
     bootstrap().then(()=>{
