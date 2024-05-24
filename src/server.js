@@ -47,3 +47,5 @@ if(PORT) {
 } else {
     console.error('[server] PORT is not defined');
 }
+
+module.exports = app;
